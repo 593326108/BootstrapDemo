@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"/>
+  <title>bootstrap项目实战</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="static/css/index.css"/>
+  <style>
+  </style>
+</head>
+<body>
+<!--导航-->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!--&lt;!&ndash; 小屏幕导航按钮和logo &ndash;&gt;-->
+    <div class="navbar-header">
+      <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="index.html" class="navbar-brand">Maizi Admin</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;后台首页</a></li>
+        <li class="active"><a href="user_list.html"><span class="glyphicon glyphicon-user"></span>&nbsp;用户管理</a></li>
+        <li><a href="content.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;内容管理</a></li>
+        <li><a href="tag.html"><span class="glyphicon glyphicon-tags"></span>&nbsp;标签管理</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">admin&nbsp;<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html"><span class="glyphicon glyphicon-screenshot"></span>&nbsp;&nbsp;前台首页</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;个人主页</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;个人设置</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;&nbsp;账户中心</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;我的收藏</a></li>
+            <li class="hidden-lg hidden-xs hidden-md"><a href="#"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;退出</a></li>
+          </ul>
+        </li>
+        <li class="hidden-sm"><a href="#"><span class="glyphicon glyphicon-off"></span>&nbsp;退出</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container user">
+  <div class="col-md-2">
+    <div class="list-group">
+      <a href="user_list.html" class="list-group-item active">用户管理</a>
+      <a href="user_search.html" class="list-group-item">用户搜索</a>
+      <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal">添加用户</a>
+    </div>
+  </div>
+  <div class="col-md-10">
+    <div class="page-header">
+      <h1>用户管理</h1>
+    </div>
+    <ul class="nav nav-tabs">
+      <li class="active">
+        <a href="user_list.html">用户列表</a>
+      </li>
+    </ul>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>用户名</th>
+          <th>邮箱</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>张三</td>
+          <td>123456789@maiziedu.com</td>
+          <td>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                操作 <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">编辑</a></li>
+                <li><a href="#">删除</a></li>
+                <li><a href="#">锁定</a></li>
+                <li><a href="#">修改密码</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>张三</td>
+          <td>123456789@maiziedu.com</td>
+          <td>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                操作 <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">编辑</a></li>
+                <li><a href="#">删除</a></li>
+                <li><a href="#">锁定</a></li>
+                <li><a href="#">修改密码</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>张三</td>
+          <td>123456789@maiziedu.com</td>
+          <td>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                操作 <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">编辑</a></li>
+                <li><a href="#">删除</a></li>
+                <li><a href="#">锁定</a></li>
+                <li><a href="#">修改密码</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>张三</td>
+          <td>123456789@maiziedu.com</td>
+          <td>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                操作 <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">编辑</a></li>
+                <li><a href="#">删除</a></li>
+                <li><a href="#">锁定</a></li>
+                <li><a href="#">修改密码</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>张三</td>
+          <td>123456789@maiziedu.com</td>
+          <td>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                操作 <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">编辑</a></li>
+                <li><a href="#">删除</a></li>
+                <li><a href="#">锁定</a></li>
+                <li><a href="#">修改密码</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>张三</td>
+          <td>123456789@maiziedu.com</td>
+          <td>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                操作 <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">编辑</a></li>
+                <li><a href="#">删除</a></li>
+                <li><a href="#">锁定</a></li>
+                <li><a href="#">修改密码</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>张三</td>
+          <td>123456789@maiziedu.com</td>
+          <td>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                操作 <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">编辑</a></li>
+                <li><a href="#">删除</a></li>
+                <li><a href="#">锁定</a></li>
+                <li><a href="#">修改密码</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>张三</td>
+          <td>123456789@maiziedu.com</td>
+          <td>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                操作 <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">编辑</a></li>
+                <li><a href="#">删除</a></li>
+                <li><a href="#">锁定</a></li>
+                <li><a href="#">修改密码</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>张三</td>
+          <td>123456789@maiziedu.com</td>
+          <td>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                操作 <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">编辑</a></li>
+                <li><a href="#">删除</a></li>
+                <li><a href="#">锁定</a></li>
+                <li><a href="#">修改密码</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>张三</td>
+          <td>123456789@maiziedu.com</td>
+          <td>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                操作 <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">编辑</a></li>
+                <li><a href="#">删除</a></li>
+                <li><a href="#">锁定</a></li>
+                <li><a href="#">修改密码</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>张三</td>
+          <td>123456789@maiziedu.com</td>
+          <td>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                操作 <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">编辑</a></li>
+                <li><a href="#">删除</a></li>
+                <li><a href="#">锁定</a></li>
+                <li><a href="#">修改密码</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- 分页 -->
+  <div>
+    <ul class="pagination pull-right">
+      <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+      <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 模态框 -->
+<div class="modal fade" id="myModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">添加用户</h4>
+      </div>
+      <div class="modal-body">
+        <form action="#" class="form">
+          <div class="form-group">
+            <label for="add_username">用户名</label>
+            <input type="text" name="add_username" class="form-control" id="add_username" placeholder="请输入用户名"/>
+          </div>
+          <div class="form-group">
+            <label for="add_psd">密码</label>
+            <input type="password" name="add_psd" class="form-control" id="add_psd" placeholder="请输入密码"/>
+          </div>
+          <div class="form-group">
+            <label for="confirm_psd">密码</label>
+            <input type="password" name="confirm_psd" class="form-control" id="confirm_psd" placeholder="请再次输入密码"/>
+          </div>
+          <div class="form-group">
+            <label for="add_email">邮箱</label>
+            <input type="email" name="add_email" class="form-control" id="add_email" placeholder="请输入邮箱"/>
+          </div>
+          <div class="form-group">
+            <label for="add_group">用户组</label>
+            <select class="form-control" name="add_group" id="add_group">
+              <option>限制会员</option>
+              <option>新手上路</option>
+              <option>注册会员</option>
+              <option>中级会员</option>
+              <option>高级会员</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <button type="button" class="btn btn-primary">提交</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--footer-->
+<footer>
+  <div class="container text-center">
+    <p>Copyright © 2012-2015  www.maiziedu.com  蜀ICP备13014270号-4</p>
+  </div>
+</footer>
+
+
+<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

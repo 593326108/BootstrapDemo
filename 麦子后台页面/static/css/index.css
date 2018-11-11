@@ -1,0 +1,107 @@
+body {
+    font-family: "Microsoft YaHhei",sans-serif;
+    color: #666;
+    padding-top: 70px;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.mt_15 {
+    margin-top: 15px;
+}
+
+footer p {
+    height: 70px;
+    line-height: 70px;
+}
+
+.list-group-item a {
+    color: #337ab7;
+}
+
+.list-group-item a:hover {
+    text-decoration: underline;
+    color: #23527c;
+}
+
+#canvas {
+    padding-right: 20px;
+}
+
+.progress {
+    margin-bottom: 12px;
+}
+
+/*团队留言板*/
+
+.wh64 {
+    width: 60px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.form-group label {
+    font-weight: 700;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+
+.form-group button {
+    margin-top: 15px;
+}
+
+
+/* 用户管理 内容管理 */
+.tag .page-header,
+.content .page-header,
+.user .page-header {
+    margin-top: 0;
+}
+
+.tag .page-header h1,
+.content .page-header h1,
+.user .page-header h1 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.user .user_search {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+.user .table {
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+.modal .form-group label {
+    font-weight: 700;
+}
+
+.user .table tbody tr th,
+.user .table tbody tr td {
+    line-height: 40px;
+}
+
+
+.content .form-group button {
+    margin-top: -5px;
+}
+
+.tag .alert {
+    padding-top: 15px;
+    float: left;
+    margin-left: 15px;
+}
